@@ -1,0 +1,38 @@
+Structuring Strategy - from structure.html
+
+
+Document Outline
+I looked at structure.html and wrote out the outline like this:
+
+body
+  header (role="banner") - has the h1 Comp 484 and h2 for page title, plus the nav
+  main (role="main")
+    article - the main content
+      header - intro with h3 and paragraph
+      section - each major topic (Sectioning elements, Document outlines, etc.)
+      aside (role="complementary") - the W3C warning box
+  footer (role="contentinfo") - CSUN address
+
+How the structural tags are used
+- aside = for extra/side content like the W3C warning, with role="complementary"
+- article = wraps the whole main content of the page
+- nav = the navigation links at the top, role="navigation"
+- section = each part of the article that has its own h3 heading
+
+Semantic tags (header, footer, main)
+- header = used at the top of the page (h1, h2, nav) and also inside article for the intro
+- footer = at the bottom with the CSUN info, role="contentinfo"
+- main = wraps the primary content so there's one main area per page, role="main"
+
+ARIA roles I used
+- header -> role="banner"
+- nav -> role="navigation"
+- main -> role="main"
+- aside -> role="complementary"
+- footer -> role="contentinfo"
+
+Diagram (task 1d)
+I made a diagram of the tag structure - see images/document-structure-diagram.png. It shows body with header, main (article + sections), and footer.
+
+Document outline screenshot (task 1d)
+To get the document outline I used the website from the slides (or you can use validator.nu or a HeadingsMap extension). Then take a screenshot and put it in the images folder.
